@@ -1,1 +1,8 @@
-# This python file generates automatic password for the user
+import random
+chars = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()"
+length = int(input("enter length for password: "))
+password = ""
+
+for a in range(length):
+    password += random.choice(chars)
+print(password)    
